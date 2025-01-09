@@ -16,6 +16,16 @@
     cliphist
     pavucontrol
     keepassxc
+    zsh
+    #antidote
+    tmux
+    stow
+    fzf
+    jq
+    bat
+    ripgrep
+    fd
+    autojump
   ];
   
   environment.sessionVariables = rec {
@@ -40,4 +50,10 @@
     withUWSM = true;
     xwayland.enable = true;
   };
+  
+  services.postgresql = {
+    enable = true;
+    settings.port = 15432;
+  };
+
 }

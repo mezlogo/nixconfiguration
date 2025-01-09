@@ -114,6 +114,10 @@
     extraGroups = [ "networkmanager" "wheel" "docker" ];
   };
 
+  users.users.mytestuser = {
+    isNormalUser = true;
+  };
+
   # Enabling Experimental features for bluetooth got me to see device's charge level.
   hardware.bluetooth = {
     enable = true;

@@ -121,12 +121,14 @@
   # Enabling Experimental features for bluetooth got me to see device's charge level.
   hardware.bluetooth = {
     enable = true;
+    powerOnBoot = true;
     settings = {
       General = {
         Experimental = "true";
       };
     };
   };
+  services.blueman.enable = true;
 
   # Install firefox.
   programs.firefox.enable = true;

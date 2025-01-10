@@ -16,6 +16,7 @@
     cliphist
     pavucontrol
     keepassxc
+    helvum
     zsh
     #antidote
     tmux

@@ -27,6 +27,13 @@
     ripgrep
     fd
     autojump
+    zellij
+    nushell
+    dive
+    ctop
+    lazysql
+    lazygit
+    lazydocker
   ];
   
   environment.sessionVariables = rec {
@@ -46,6 +53,10 @@
 
   programs.regreet.enable = true;
   
+  programs.zsh.enable = true;
+  
+  users.users.mezlogo.shell = pkgs.zsh;
+
   programs.hyprland = {
     enable = true;
     withUWSM = true;

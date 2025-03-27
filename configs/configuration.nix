@@ -12,6 +12,7 @@
       # ./plasma.nix
       ./hyprland.nix
       ./fonts.nix
+      ./virtual-host.nix
     ];
 
   # Bootloader.

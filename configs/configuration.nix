@@ -55,6 +55,10 @@
 
   virtualisation.docker = {
     enable = true;
+    # daemon.settings = {
+    #   insecure-registries = ["docker.artifactory.mara.local"];
+    # };
+    extraOptions = "--insecure-registry docker.artifactory.mara.local";
   };
 
   # Enable CUPS to print documents.

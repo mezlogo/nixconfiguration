@@ -34,6 +34,10 @@
     lazysql
     lazygit
     lazydocker
+    nodejs_23
+    deno
+    gcc
+    gnumake
   ];
   
   environment.sessionVariables = rec {

@@ -1,5 +1,7 @@
 { config, pkgs, ... }:
-{
+let
+  unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
+in {
   environment.systemPackages = with pkgs; [
     kitty
     alacritty
@@ -38,7 +40,18 @@
     deno
     gcc
     gnumake
-  ];
+    satty
+    flameshot
+  ] ++ (with unstable; [
+    ollama
+    neovim
+    jdk
+    zed-editor
+    jetbrains.idea-community-bin
+    vscode-fhs
+    maven
+    gradle
+  ]);
   
   environment.sessionVariables = rec {
     TERM = "kitty";

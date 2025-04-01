@@ -147,7 +147,6 @@
     copyq
     jq
     wl-clipboard
-    neovim
     brave
     ungoogled-chromium
     obsidian
@@ -159,12 +158,6 @@
     kind
     kubectl
     minikube
-    jdk
-    nodejs_20
-    zed-editor
-    jetbrains.idea-community-bin
-    maven
-    gradle
     nekoray
     telegram-desktop
     networkmanager-openconnect
@@ -173,7 +166,6 @@
     ffmpeg
     yt-dlp
     aria2
-    vscode-fhs
     vlc
     nvtopPackages.full
     libva-utils
